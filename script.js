@@ -67,7 +67,7 @@ function storeDetails() {
 function checkLoginDetails() {
   let mMatch = userDatabase.find((info) => info.mail === loginMail.value);
   if (mMatch) {
-    if (mMatch.password === loginPassword) {
+    if (mMatch.password === loginPassword.value) {
       alert("Login Successful!");
     } else {
       alert("Go and sign up");
